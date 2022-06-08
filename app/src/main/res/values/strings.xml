@@ -7,4 +7,6 @@
     <string name="inputNumber">ex: 392092345</string>
     <string name="se_connecter">Se connecter</string>
     <string name="s_inscrire">S\'inscrire</string>
+    <string name="logo">logo</string>
+    <string name="image_fond">image</string>
 </resources>
