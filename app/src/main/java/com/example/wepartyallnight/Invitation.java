@@ -1,6 +1,12 @@
 package com.example.wepartyallnight;
 
-import java.sql.Date;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class Invitation {
     private String userPhone;
@@ -9,6 +15,30 @@ public class Invitation {
     private String status;
     private Date createdAt;
     private Date updatedAt;
+
+    public Invitation(){}
+
+    public Invitation(JSONObject data){
+        DateFormat formatter = new SimpleDateFormat("yyyy-M-d'T'HH:mm:ss");
+        try {
+            this.userPhone = data.getString("userPhone");
+            this.eventId = data.getInt("eventId");
+            this.status = data.getString("status");
+            try {
+                String temp = data.getString("createdAt").substring(0,data.getString("createdAt").length()-5);
+                this.createdAt = formatter.parse(temp);
+                temp = data.getString("updatedAt").substring(0,data.getString("updatedAt").length()-5);
+                this.updatedAt = formatter.parse(temp);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            if(data.has("Event")){
+                this.event = new Event(data.getJSONObject("Event"));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
 
     public String getUserPhone() {
         return userPhone;
