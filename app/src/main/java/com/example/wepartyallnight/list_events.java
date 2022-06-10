@@ -1,12 +1,12 @@
 package com.example.wepartyallnight;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.wepartyallnight.Model.beans.Event;
-import com.example.wepartyallnight.Model.dao.EventsDao;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import org.json.JSONObject;
 
@@ -18,22 +18,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class list_events extends AppCompatActivity {
-    // private final List<Event> musiciensList = new ArrayList<Event>();
-    // private ArrayAdapter<Event> listViewAdapter;
+    private List<Event> ListeEvent = new ArrayList<Event>();
+    private ArrayAdapter<Event> listViewAdapter;
+    private ListView xmlListe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
-
-        EventsDao e = new EventsDao();
-
-        e.getAllEvents();
-
-=======
->>>>>>> 8df14e46da575a5de9bfb4c89eade640882f13e7
         setContentView(R.layout.activity_list_events);
+
+        xmlListe = (ListView) findViewById(R.id.events_list);
+
         EventAll eventAll = new EventAll();
         eventAll.execute();
+
+
+        listViewAdapter = new ArrayAdapter<Event>(this,
+                android.R.layout.simple_list_item_1, android.R.id.text1, xmlListe);
+
     }
 
     class EventAll extends AsyncTask<String, Void, List<Event>> {
@@ -81,6 +82,7 @@ public class list_events extends AppCompatActivity {
             /*
                 TO DO : METTRE LA LIST EVENT DANS UNE RECYCLER VIEW
              */
+            ListeEvent = listEvents;
         }
     }
 }
