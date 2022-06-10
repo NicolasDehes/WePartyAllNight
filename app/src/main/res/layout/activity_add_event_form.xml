@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_image"
+    tools:context=".AddEventForm">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="114dp"
+        android:layout_height="59dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/ic_logo_weparty"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="-8dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="276dp"
+        android:layout_height="53dp"
+        android:text="Enregistrer"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="276dp"
+        android:layout_height="53dp"
+        android:text="Retour Dashboard"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="679dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="description"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="adresse"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+    <EditText
+        android:id="@+id/pseudo5"
+        android:layout_width="265dp"
+        android:layout_height="54dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="rue de la couche"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <EditText
+        android:id="@+id/pseudo7"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="17:30"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="109dp"
+        android:layout_height="19dp"
+        android:layout_weight="1"
+        android:text="heure de de fin"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="109dp"
+        android:layout_height="19dp"
+        android:layout_weight="1"
+        android:text="03/02/2022"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <EditText
+        android:id="@+id/pseudo4"
+        android:layout_width="118dp"
+        android:layout_height="43dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="date de fin"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <EditText
+        android:id="@+id/pseudo10"
+        android:layout_width="265dp"
+        android:layout_height="54dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="C'est la fete"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="573dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="109dp"
+        android:layout_height="19dp"
+        android:layout_weight="1"
+        android:text="02/02/2022"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="nom Event"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Code Postal"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <EditText
+        android:id="@+id/pseudo8"
+        android:layout_width="265dp"
+        android:layout_height="54dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="31400"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <EditText
+        android:id="@+id/pseudo6"
+        android:layout_width="118dp"
+        android:layout_height="43dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="06:30"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <EditText
+        android:id="@+id/pseudo3"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="date de debut"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <EditText
+        android:id="@+id/pseudo9"
+        android:layout_width="265dp"
+        android:layout_height="54dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="rue de la couche"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="109dp"
+        android:layout_height="19dp"
+        android:layout_weight="1"
+        android:text="heure de debut"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <EditText
+        android:id="@+id/pseudo2"
+        android:layout_width="265dp"
+        android:layout_height="54dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="eventdefou"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="adresse"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="413dp"
+        android:layout_height="43dp"
+        android:background="#000000"
+        android:capitalize="words"
+        android:fontFamily="@font/revalia"
+        android:paddingTop="30px"
+        android:text="créer un event"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="285dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/revalia"
+        android:text="COMPTE ASTHINO"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
