@@ -3,14 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_add_event_form.xml" value="0.11296859169199595" />
         <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_event.xml" value="0.11296859169199595" />
+        <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_event1.xml" value="0.11296859169199595" />
         <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_list_events.xml" value="0.16" />
         <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_login.xml" value="0.11296859169199595" />
         <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/fragment_login.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_add_event_form.xml" value="0.35965881347656237" />
-        <entry key="app/src/main/res/layout/activity_event1.xml" value="0.46295166015625" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1771087646484375" />
       </map>
     </option>
   </component>
