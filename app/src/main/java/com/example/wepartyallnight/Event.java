@@ -35,6 +35,8 @@ public class Event {
     private Date createdAt;
     private Date updatedAt;
 
+    public Event(){}
+
     public Event(JSONObject data) {
         DateFormat formatter = new SimpleDateFormat("yyyy-M-d'T'HH:mm:ss");
         try {
@@ -53,9 +55,9 @@ public class Event {
                 this.user = new User(data.getJSONObject("User"));
             }
             try {
-                String temp = data.getString("createdAt").substring(0,data.getString("date_event").length()-5);
+                String temp = data.getString("createdAt").substring(0,data.getString("createdAt").length()-5);
                 this.createdAt = formatter.parse(temp);
-                temp = data.getString("createdAt").substring(0,data.getString("date_event").length()-5);
+                temp = data.getString("updatedAt").substring(0,data.getString("updatedAt").length()-5);
                 this.updatedAt = formatter.parse(temp);
             } catch (ParseException e) {
                 e.printStackTrace();

@@ -12,6 +12,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EventActivity extends AppCompatActivity {
 
@@ -21,11 +23,10 @@ public class EventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
-        EventFeeder eventFeeder = new EventFeeder();
-        eventFeeder.execute("1");
+        EventById eventById = new EventById();
+        eventById.execute("1");
     }
-
-    class EventFeeder extends AsyncTask<String, Void, Event> {
+    class EventById extends AsyncTask<String, Void, Event> {
         private ProgressDialog pDialog;
         private String url_path="http://minecraftcoloc.ddns.net:1337/api/events/";
         private Exception exception;
@@ -34,7 +35,7 @@ public class EventActivity extends AppCompatActivity {
         protected void onPreExecute(){
             super.onPreExecute();
             pDialog = new ProgressDialog(EventActivity.this);
-            pDialog.setMessage("Please Wait...");
+            pDialog.setMessage("Récupération de l'événement...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);
             pDialog.show();
@@ -42,11 +43,9 @@ public class EventActivity extends AppCompatActivity {
         @Override
         protected Event doInBackground(String... params) {
             try {
-                String urlStr = this.url_path+params[0];
-                String method = "GET";
-                URL url = new URL(urlStr);
+                URL url = new URL(url_path+params[0]);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setRequestMethod(method);
+                conn.setRequestMethod("GET");
                 conn.setRequestProperty("Accept", "application/json");
                 if (conn.getResponseCode() != 200) {
                     throw new RuntimeException("Failed : HTTP Error code : "
