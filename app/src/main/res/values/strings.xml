@@ -10,7 +10,7 @@
     <string name="logo">logo</string>
     <string name="image_fond">image</string>
     <string name="pseudo_text">pseudo</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="DashbordText">Dashboard</string>
 </resources>

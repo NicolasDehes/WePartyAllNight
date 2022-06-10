@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_bg_image"
     tools:context=".dashboard">
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="344dp"
