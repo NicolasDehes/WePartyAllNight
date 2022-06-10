@@ -13,6 +13,12 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        Properties properties = new Properties()
+
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        manifestPlaceholders = [url_path: "${properties.getProperty('url_path')}"]
+        manifestPlaceholders = [api_key: "${properties.getProperty('api_key')}"]
     }
 
     buildTypes {
