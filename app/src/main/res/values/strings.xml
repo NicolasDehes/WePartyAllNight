@@ -17,4 +17,5 @@
     <string name="new_text">New</string>
     <string name="envents_text">envents</string>
     <string name="my_list_text">my list</string>
+    <string name="text_banner_event">Events</string>
 </resources>

@@ -28,6 +28,9 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (pseudo.getText().length() > 0 && pwd.getText().length() > 0) {
+
+
+
                     openAppDashboard();
                 } else {
                     String toastMessage = "Pseudo or Phone are not populated";

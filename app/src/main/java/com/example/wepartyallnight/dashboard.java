@@ -16,7 +16,7 @@ public class dashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        btn_envents = (Button) findViewById(R.id.btn_new_event);
+        btn_envents = (Button) findViewById(R.id.btn_list_events);
 
         btn_envents.setOnClickListener(new View.OnClickListener() {
             @Override
