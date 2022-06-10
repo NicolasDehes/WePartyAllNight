@@ -15,6 +15,8 @@ public class User {
     private Date createdAt;
     private Date updatedAt;
 
+    public User(){}
+
     public User(JSONObject data) {
         DateFormat formatter = new SimpleDateFormat("dd/MM/yy");
         try {
@@ -22,8 +24,10 @@ public class User {
             this.name = data.getString("name");
             this.phone = data.getString("phone");
             try {
-                this.createdAt = formatter.parse(data.getString("createdAt"));
-                this.updatedAt = formatter.parse(data.getString("updatedAt"));
+                String temp = data.getString("createdAt").substring(0,data.getString("createdAt").length()-5);
+                this.createdAt = formatter.parse(temp);
+                temp = data.getString("updatedAt").substring(0,data.getString("updatedAt").length()-5);
+                this.updatedAt = formatter.parse(temp);
             } catch (ParseException e) {
                 e.printStackTrace();
             }
