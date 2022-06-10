@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
+        <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_list_events.xml" value="0.10612968591691996" />
+        <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_login.xml" value="0.11296859169199595" />
         <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/zafia/OneDrive/WePartyAllNight/app/src/main/res/layout/fragment_login.xml" value="0.2" />
       </map>
