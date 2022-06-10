@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_bg_image"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -46,14 +46,19 @@
             android:text="@string/textPseudo"
             android:textColor="@color/black" />
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/pseudo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
             android:backgroundTint="#000000"
+            android:ems="10"
             android:hint="@string/example_pseudo"
+            android:inputType="textPersonName"
             android:minHeight="48dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/material_dynamic_neutral_variant50" />
+            android:textColorHint="#546E7A" />
 
         <Space
             android:layout_width="match_parent"
@@ -63,19 +68,19 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/textNum"
+            android:text="@string/textPwd"
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:autofillHints=""
             android:backgroundTint="#000000"
             android:ems="10"
-            android:hint="@string/inputNumber"
-            android:inputType="number"
+            android:hint="@string/hintPassword"
+            android:inputType="textPassword"
             android:minHeight="48dp"
             android:textColor="@color/black"
             android:textColorHint="#546E7A" />
